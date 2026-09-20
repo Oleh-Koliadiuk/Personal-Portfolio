@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Oleh Koliadiuk — developer building modern web applications and Python projects."
+    />
+
+    <title>Oleh Koliadiuk | Developer</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="module" src="src/app.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Oleh Koliadiuk</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="settings">
+        <button id="language-toggle" type="button">UA</button>
+        <button id="theme-toggle" type="button">Dark</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="about-content">
+          <p class="section-label" data-i18n="hero.label">Developer</p>
+
+          <h1 data-i18n="hero.title">
+            Hi, I'm Oleh.<br />
+            I build for the web.
+          </h1>
+
+          <p class="about-description" data-i18n="hero.description">
+            I build modern, responsive websites with a focus on clean design,
+            solid structure and a smooth user experience.
+          </p>
+
+          <p class="about-description" data-i18n="hero.descriptionSecond">
+            I also work with Python, building Telegram bots, automation tools
+            and small applications.
+          </p>
+
+          <p class="about-description" data-i18n="hero.descriptionThird">
+            I have built 10+ working websites and several personal projects,
+            using each one to explore new technologies and improve my
+            development skills.
+          </p>
+
+          <div class="about-links">
+            <a href="#projects" data-i18n="hero.projects"> View projects </a>
+
+            <a href="#contact" data-i18n="hero.contact"> Get in touch </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack">
+        <p class="section-label" data-i18n="stack.label">Technologies</p>
+
+        <h2 data-i18n="stack.title">Stack</h2>
+
+        <p class="section-description" data-i18n="stack.description">
+          The technologies and tools I use to build, test and maintain my
+          projects.
+        </p>
+
+        <div class="stack-list">
+          <img
+            src="https://img.shields.io/badge/HTML5-111111?style=for-the-badge&logo=html5&logoColor=ffffff"
+            alt="HTML5"
+          />
+
+          <img
+            src="https://img.shields.io/badge/CSS3-111111?style=for-the-badge&logo=css3&logoColor=ffffff"
+            alt="CSS3"
+          />
+
+          <img
+            src="https://img.shields.io/badge/Tailwind_CSS-111111?style=for-the-badge&logo=tailwindcss&logoColor=ffffff"
+            alt="Tailwind CSS"
+          />
+
+          <img
+            src="https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=ffffff"
+            alt="JavaScript"
+          />
+
+          <img
+            src="https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python&logoColor=ffffff"
+            alt="Python"
+          />
+
+          <img
+            src="https://img.shields.io/badge/aiogram-111111?style=for-the-badge&logo=telegram&logoColor=ffffff"
+            alt="aiogram"
+          />
+
+          <img
+            src="https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git&logoColor=ffffff"
+            alt="Git"
+          />
+
+          <img
+            src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=ffffff"
+            alt="GitHub"
+          />
+        </div>
+
+        <div class="stack-description">
+          <article class="stack-item">
+            <h3 data-i18n="stack.frontend.title">Frontend</h3>
+
+            <p data-i18n="stack.frontend.description">
+              I build responsive interfaces with HTML, CSS, JavaScript and
+              Tailwind CSS, focusing on clean structure, responsive layouts and
+              usability.
+            </p>
+          </article>
+
+          <article class="stack-item">
+            <h3 data-i18n="stack.python.title">Python</h3>
+
+            <p data-i18n="stack.python.description">
+              I use Python for automation, media processing and Telegram bot
+              development. I have experience working with aiogram and building
+              standalone Python applications.
+            </p>
+          </article>
+
+          <article class="stack-item">
+            <h3 data-i18n="stack.tools.title">Tools</h3>
+
+            <p data-i18n="stack.tools.description">
+              Git and GitHub are part of my everyday workflow. I use version
+              control to organize projects, track changes and keep development
+              structured.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="section-label" data-i18n="projects.label">Selected work</p>
+
+        <h2 data-i18n="projects.title">Projects</h2>
+
+        <p class="section-description" data-i18n="projects.description">
+          A selection of projects I've built while exploring web development,
+          JavaScript and Python.
+        </p>
+
+        <div class="projects-list">
+          <!-- PROJECT 01 -->
+          <article class="project">
+            <div class="project-header">
+              <span class="project-number">01</span>
+
+              <a
+                href="https://github.com/Oleh-Koliadiuk/To-Do-List"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.github"
+              >
+                GitHub ↗
+              </a>
+            </div>
+
+            <h3 data-i18n="projects.todo.title">To-Do List</h3>
+
+            <p data-i18n="projects.todo.description">
+              A simple task management application built with vanilla
+              JavaScript. It supports creating, completing and deleting tasks
+              while keeping data persistent with localStorage.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>localStorage</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <span class="project-number">02</span>
+
+              <a
+                href="https://github.com/Oleh-Koliadiuk/Auto-Shorts-Generator"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.github"
+              >
+                GitHub ↗
+              </a>
+            </div>
+
+            <h3 data-i18n="projects.shorts.title">Auto Shorts Generator</h3>
+
+            <p data-i18n="projects.shorts.description">
+              A Python-based pipeline for automating the creation of vertical
+              videos for Shorts, Reels and TikTok. It combines video processing,
+              chroma key and AI-powered subtitles.
+            </p>
+
+            <div class="project-tech">
+              <span>Python</span>
+              <span>MoviePy</span>
+              <span>OpenCV</span>
+              <span>PIL</span>
+              <span>Faster-Whisper</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <span class="project-number">03</span>
+
+              <a
+                href="https://github.com/Oleh-Koliadiuk/Generate-Quotes"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.github"
+              >
+                GitHub ↗
+              </a>
+            </div>
+
+            <h3 data-i18n="projects.quotes.title">Generate Quotes</h3>
+
+            <p data-i18n="projects.quotes.description">
+              A minimalist quote generator built with vanilla JavaScript. It
+              includes theme switching, clipboard support, generation statistics
+              and persistent state with localStorage.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>localStorage</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-more">
+          <a
+            href="https://github.com/Oleh-Koliadiuk"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="projects.more"
+          >
+            View more on GitHub ↗
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section-label" data-i18n="contact.label">Get in touch</p>
+
+        <h2 data-i18n="contact.title">Contact</h2>
+
+        <p class="section-description" data-i18n="contact.description">
+          Have a project idea, a question or just want to connect? You can find
+          me through the links below.
+        </p>
+
+        <div class="contact-links">
+          <a
+            href="https://github.com/Oleh-Koliadiuk"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="contact.github"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            href="https://t.me/YOUR-USERNAME"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="contact.telegram"
+          >
+            Telegram ↗
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Oleh Koliadiuk</p>
+    </footer>
+  </body>
+</html>
