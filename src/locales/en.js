@@ -65,7 +65,24 @@ export default {
 
     github: "GitHub ↗",
 
-    more: "View more on GitHub ↗",
+    more: "More projects ↓",
+    less: "Show less ↑",
+    esports: {
+      title: "Esports Hub Dashboard",
+      description:
+        "A responsive esports dashboard interface with player profiles, statistics and settings. It includes theme switching, interactive fields and persistent state using localStorage.",
+    },
+    rocket: {
+      title: "Visual Rocket Launcher Hub",
+      description:
+        "An interactive rocket launcher simulator built around dynamic state, user interactions and browser-based animations. It uses localStorage, input validation and dynamically generated launch effects.",
+    },
+    clicker: {
+      title: "CyberDev Clicker",
+      description:
+        "An incremental browser game built around resource management and developer career progression. It features passive income, upgrade mechanics, scaling costs and persistent game state.",
+    },
+
 
     todo: {
       title: "To-Do List",

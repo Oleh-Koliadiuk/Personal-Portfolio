@@ -83,6 +83,11 @@ const translatePage = (language) => {
   });
 
   updateLanguageButton(language);
+
+  const projectsExpanded =
+    projectsToggle?.getAttribute("aria-expanded") === "true";
+
+  updateProjectsToggle(projectsExpanded);
 };
 
 const updateLanguageButton = (language) => {
@@ -184,6 +189,47 @@ languageToggle?.addEventListener("click", () => {
 themeToggle?.addEventListener("click", toggleTheme);
 
 systemThemeMedia.addEventListener("change", handleSystemThemeChange);
+
+
+const projectsToggle = document.querySelector("#projects-toggle");
+const hiddenProjects = document.querySelectorAll(".project.is-hidden");
+
+const updateProjectsToggle = (expanded) => {
+  if (!projectsToggle) {
+    return;
+  }
+
+  const language = getSavedLanguage();
+  const translation = translations[language];
+
+  projectsToggle.textContent =
+    getNestedValue(
+      translation,
+      expanded ? "projects.less" : "projects.more"
+    ) || (expanded ? "Show less ↑" : "More projects ↓");
+
+  projectsToggle.setAttribute(
+    "aria-expanded",
+    String(expanded)
+  );
+};
+
+const toggleProjects = () => {
+  const expanded =
+    projectsToggle?.getAttribute("aria-expanded") === "true";
+
+  hiddenProjects.forEach((project) => {
+    project.classList.toggle("is-hidden", expanded);
+  });
+
+  // Force layout after the state change so the browser animates
+  // the cards smoothly instead of jumping to the final state.
+  void document.body.offsetHeight;
+
+  updateProjectsToggle(!expanded);
+};
+
+projectsToggle?.addEventListener("click", toggleProjects);
 
 const initializeApp = () => {
   const initialLanguage = getSavedLanguage();

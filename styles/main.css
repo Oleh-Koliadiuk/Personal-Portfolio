@@ -809,3 +809,71 @@ button:focus-visible {
     transition: none !important;
   }
 }
+
+
+/* Projects toggle */
+
+.project.is-hidden {
+  max-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top-color: transparent;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.projects-list .project {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  overflow: hidden;
+  transition:
+    max-height 520ms ease,
+    opacity 380ms ease,
+    transform 520ms ease,
+    margin 520ms ease,
+    padding 520ms ease,
+    border-color 520ms ease;
+}
+
+.projects-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}
+
+.projects-toggle {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    color var(--transition),
+    transform var(--transition);
+}
+
+.projects-toggle:hover {
+  color: var(--text-muted);
+  transform: translateY(-1px);
+}
+
+.projects-toggle:focus-visible {
+  outline: 1px solid var(--border-strong);
+  outline-offset: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-toggle,
+  .projects-list .project {
+    transition: none;
+  }
+}
