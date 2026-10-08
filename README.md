@@ -4,7 +4,7 @@ Personal portfolio website of Oleh Koliadiuk, a developer focused on web develop
 
 The website presents my background, technical stack, selected projects and contact information in a clean, minimal interface.
 
-https://oleh-koliadiuk.netlify.app
+https://oleg-koliadiuk.netlify.app
 
 ## Overview
 
